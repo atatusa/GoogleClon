@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(32, 33, 36);
+    font-size: 1.3rem;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 2rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav svg {
+    filter: invert(100%);
+    margin-right: 2rem;
+    padding: 0.6rem;
+}
+
+nav svg:hover {
+    background-color: rgb(202, 202, 202);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav img {
+    border-radius: 50%;
+}
+
+.hide-google-apps {
+    display: none;
+}
+
+.show-google-apps {
+    display: block;
+}
+
+.google-apps-container {
+    width: 328px;
+    height: 448px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: rgb(48, 49, 52);
+    border-radius: 8px;
+    position: absolute;
+    right: 18px;
+    top: 65px;
+    padding: 3.5rem;
+}
+
+.app-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.app-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.perfil {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75vh;
+    padding-top: 3rem;
+}
+
+.search_box {
+    width: 55vw;
+}
+
+.google_logo {
+    padding-bottom: 1.7rem;
+}
+
+.search-bar {
+    padding-bottom: 3rem;
+}
+
+.search-bar__container {
+    display: flex;
+    align-items: center;
+    border: solid 1.8px rgb(98, 101, 107);
+    width: clamp(400px, 45vw, 550px);
+    height: 4.6rem;
+    border-radius: 30px;
+}
+
+.search-bar__container:hover {
+    background-color: rgb(48, 49, 52);
+    border: none;
+}
+
+.search-bar__container .search-icon {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+.search-bar__container input {
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.mic-voice {
+    width: 16px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.focus:focus {
+    outline: none;
+}
+
+.search-bar__container span {
+    width: 10%;
+}
+
+.buttons_container .btn {
+    width: 170px;
+    height: 3.6rem;
+    border-radius: 5px;
+    border: none;
+    min-width: 54px;
+    background-color: rgb(48, 49, 52);
+    color: rgb(214, 209, 209);
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.buttons_container .btn:hover {
+    outline: solid 1.8px rgb(98, 101, 107);
+}
+
+.buttons_links a {
+    color: rgb(87, 157, 241);
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
+.buttons_links a:hover {
+    text-decoration: underline;
+}
+
+.buttons_links {
+    display: flex;
+    color: rgb(214, 209, 209);
+}
+
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(23, 23, 23);
+    color: rgb(153, 152, 153);
+    font-size: 1.4rem;
+}
+
+.country {
+    border-bottom: 1px solid #212327;
+    height: 48px;
+    padding: 1.5rem 3rem;
+    letter-spacing: .7px;
+}
+
+.about {
+    height: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.about a {
+    text-decoration: none;
+    padding-right: 3rem;
+    color: rgb(153, 152, 153);
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+.aboutGoogle,
+.preferences {
+    display: flex;
+    align-items: center;
+}
